@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Switching View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SwitchingViewController" customModule="MultiViewApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j41-QL-Pfe">
+                                <rect key="frame" x="0.0" y="766" width="390" height="44"/>
+                                <items>
+                                    <barButtonItem title="Switch Views" width="161.66666666666666" id="djw-Xh-Aqd">
+                                        <connections>
+                                            <action selector="switchViewsWithSender:" destination="BYZ-38-t0r" id="3R4-hf-SdO"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="j41-QL-Pfe" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Qtj-c3-YFG"/>
+                            <constraint firstItem="j41-QL-Pfe" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="YDy-54-0y0"/>
+                            <constraint firstItem="j41-QL-Pfe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zGE-XS-VdF"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="940" y="-217.53554502369667"/>
+        </scene>
+        <!--Blue View Controller-->
+        <scene sceneID="a6f-oN-ulX">
+            <objects>
+                <viewController storyboardIdentifier="Blue" id="yGA-2x-ExY" customClass="BlueViewController" customModule="MultiViewApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0bv-bQ-4Eq">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L4y-70-IUb">
+                                <rect key="frame" x="148" y="366" width="95" height="35"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Press Me"/>
+                                <connections>
+                                    <action selector="blueButtonPressedWithSender:" destination="yGA-2x-ExY" eventType="touchUpInside" id="rhV-a3-sqA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jcj-Vo-Yt7"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                        <constraints>
+                            <constraint firstItem="L4y-70-IUb" firstAttribute="leading" secondItem="jcj-Vo-Yt7" secondAttribute="leading" constant="149" id="Diq-fJ-gU1"/>
+                            <constraint firstItem="jcj-Vo-Yt7" firstAttribute="bottom" secondItem="L4y-70-IUb" secondAttribute="bottom" constant="443" id="Nbj-Ck-ISZ"/>
+                            <constraint firstItem="L4y-70-IUb" firstAttribute="top" secondItem="jcj-Vo-Yt7" secondAttribute="top" constant="285" id="niN-TU-bEp"/>
+                            <constraint firstItem="jcj-Vo-Yt7" firstAttribute="trailing" secondItem="L4y-70-IUb" secondAttribute="trailing" constant="146" id="xbO-hk-0W4"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ybU-IM-ueU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1750.7692307692307" y="-218.24644549763033"/>
+        </scene>
+        <!--Yellow View Controller-->
+        <scene sceneID="623-XT-H9B">
+            <objects>
+                <viewController storyboardIdentifier="Yellow" id="oRj-Hk-HgL" customClass="YellowViewController" customModule="MultiViewApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="koU-n7-HHN">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QBI-4d-lQx">
+                                <rect key="frame" x="87" y="353" width="198" height="69"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="OzQ-gt-M8E"/>
+                                    <constraint firstAttribute="width" constant="198" id="S7o-33-kTJ"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Press Me, Too"/>
+                                <connections>
+                                    <action selector="yellowButtonPressedWithSender:" destination="oRj-Hk-HgL" eventType="touchUpInside" id="b0P-67-lO7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="P1P-Sb-ieB"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="P1P-Sb-ieB" firstAttribute="bottom" secondItem="QBI-4d-lQx" secondAttribute="bottom" constant="388" id="LXD-2P-QiW"/>
+                            <constraint firstItem="QBI-4d-lQx" firstAttribute="leading" secondItem="P1P-Sb-ieB" secondAttribute="leading" constant="87" id="gDk-ip-VX1"/>
+                            <constraint firstItem="P1P-Sb-ieB" firstAttribute="trailing" secondItem="QBI-4d-lQx" secondAttribute="trailing" constant="105" id="q3r-v9-fHS"/>
+                            <constraint firstItem="QBI-4d-lQx" firstAttribute="top" secondItem="P1P-Sb-ieB" secondAttribute="top" constant="306" id="z4F-9d-gby"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fgx-zO-guD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2513.8461538461538" y="-218.24644549763033"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
